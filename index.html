@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="minty.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Go Bananas</title>
+</head>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col p-0">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <a class="navbar-brand py-0" href="#">🍌Go Bananas</a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">Shop <span class="sr-only">(current)</span></a>
+              </li>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row hero-img">
+      <div class="col-md-4 d-flex flex-column justify-content-end justify-content-md-center offset-md-8 pr-md-5">
+        <div class="bg-light rounded shadow p-3 d-none d-md-block">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati sequi expedita veniam autem iure
+            sunt harum voluptas soluta eaque alias voluptatum, laborum libero distinctio placeat iusto perspiciatis
+            eius! </p>
+          </p>Porro, est et? Doloremque impedit mollitia assumenda earum, porro laboriosam voluptatibus soluta expedita
+          fuga! Consequatur nulla vero, non animi dolorum modi veniam labore, atque officia fugiat, exercitationem harum
+          eum minus corporis delectus ducimus deleniti voluptates velit officiis ab! Aut asperiores, tempora quos minus
+          magnam quis officia nostrum vitae. </p>
+          <p>Dolore, temporibus harum aliquam perspiciatis corrupti fugit tempore error! Sunt maiores, nihil,
+            reprehenderit sint eveniet culpa facilis esse nostrum nesciunt ea architecto, quam aliquid similique. Enim
+            atque, culpa inventore sequi nihil molestias tenetur.</p>
+        </div>
+        <button type="button" class="btn btn-secondary my-5 pill-btn glow"> Shop Now</button>
+      </div>
+    </div>
+    <div class="row bg-primary text-light">
+      <div class="col text-center">
+        <h3 class="p-3">All Shirts 30% Off Today Only!</h3>
+      </div>
+    </div>
+    <div id="shop" class="row bg-banana my-4">
+      <!-- NOTE to move button out of its default spot parent must be position relative -->
+      <div class="col-md-3 d-flex flex-column justify-content-center mb-5 align-items-center ">
+        <img class="rounded w-100 object-fit-contain h-100"
+          src="https://images.unsplash.com/photo-1528825871115-3581a5387919?ixid=MnwxMjA3fDB8MHxwaG90[…]fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=716&q=80"
+          alt="partial peel">
+        <!-- NOTE the child element to be moved is position absolute -->
+        <button class="btn btn-primary pill-btn spill position-absolute">Buy Now!</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 align-items-center">
+        <img class="rounded w-100 object-fit-contain h-100"
+          src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1409&q=80"
+          alt="partial peel">
+        <button class="btn btn-primary pill-btn spill position-absolute">Buy Now!</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 align-items-center">
+        <img class="rounded w-100 object-fit-contain h-100"
+          src="https://images.unsplash.com/photo-1579523360595-bee0f3b9fafb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          alt="partial peel">
+        <button class="btn btn-primary pill-btn spill position-absolute">Buy Now!</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 align-items-center">
+        <img class="rounded w-100 object-fit-contain h-100"
+          src="https://images.unsplash.com/photo-1587334206596-c0f9f7dccbe6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+          alt="partial peel">
+        <button class="btn btn-primary pill-btn spill position-absolute">Buy Now!</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 align-items-center">
+        <img class="rounded w-100 object-fit-contain h-100"
+          src="https://images.unsplash.com/photo-1591865641966-2e0f86ba2a85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+          alt="partial peel">
+        <button class="btn btn-primary pill-btn spill position-absolute">Buy Now!</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 align-items-center">
+        <img class="rounded w-100 object-fit-contain h-100" title="Pancakes"
+          src="https://images.unsplash.com/photo-1575853121743-60c24f0a7502?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+          alt="partial peel">
+        <button class="btn btn-primary pill-btn spill position-absolute">Buy Now!</button>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row bg-primary text-light">
+      <div class="col-md-6 order-2 order-md-1">
+        <p class="p-0">Copywrite 2021 | Made with 🍌 by Codeworks</p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Terms and Conditions</p>
+            <p>About Us</p>
+          </div>
+          <div class="col-md-6">
+            <p>Contact Us</p>
+            <p>Careers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
